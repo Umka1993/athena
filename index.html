@@ -2,309 +2,363 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/animate.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="./img/—Pngtree—vintage a thick bearded man_4340169.png" type="image/png">
-  <script src="assets/js/jquery-3.4.0.min.js"></script>
-
-  <title>Резюме</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <link rel="shortcut icon" href="./img/Athena logo 1.png" type="image/png">
 
 
+    <title>ATHENA</title>
 </head>
 
+
+
 <body>
-  <header class="header" id="top">
-    <div class="header__social">
-      <a href="https://vk.com/umcik" target="blanc" class="wow animate__bounceIn" data-wow-delay="2s">
-        <img src="./img/vk.png" alt="VK">
-      </a>
-      <a href="https://www.instagram.com/umka_danilov/" target="blanc" class="wow animate__bounceIn"
-        data-wow-delay="2.5s">
-        <img src="./img/insta.png" alt="Instagram">
-      </a>
-      <a href="https://t.me/Ummca" target="blanc" class="wow animate__bounceIn" data-wow-delay="3s">
-        <img src="./img/telegram.png" alt="Telegram">
-      </a>
-      <a href="viber://chat?number=%2B+37377982502" style="display: none;" target="blanc" class="wow animate__bounceIn"
-        data-wow-delay="3.5s">
-        <img src="./img/viber.png" alt="Viber">
-      </a>
-    </div>
-
-    <div class="header__wrapp">
-      <div class="header__logo wow animate__bounceInLeft " data-wow-delay="1s">
-        <div class="header__img ">
-          <img src="./img/head-logo.jpg" class="" alt="Данилов Иван">
-        </div>
-      </div>
-      <!-- header__img -->
-
-      <div id="my_modal" class="modal">
-        <div class="modal_content">
-          <span class="close_modal_window"></span>
-          <h3 class="modal__title">Напишите мне. Я сам свяжусь с Вами!</h3>
-          <form action="send.php" method="POST" class="form modal__form">
-            <div class="input-group modal__input-group">
-              <label for="user-name" class="label form__label label--light">Имя</label>
-              <input type="text" name="userName" class="input form__input modal__input input--light" id="user-modname"
-                placeholder="Как вас зовут:" minlength="9">
-
-            </div>
-
-            <div class="input-group modal__input-group">
-              <label for="user-email" class="label form__label label--light">Ваши контакты</label>
-              <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email"
-                placeholder="Ваш Telegram, WhatsApp или Gmail:">
-
-            </div>
-
-            <div class="input-group modal__input-group">
-              <label for="user-phone" class="label form__label label--light">Ваше сообщение</label>
-              <input type="tel" name="userPhone" class="input form__input modal__input input--light modal__message"
-                id="user-modphone" placeholder="Введите сообщение:">
-
-            </div>
-
-
-
-            <div class="policy modal__policy">
-              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-              <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
-            </div>
-            <!-- /.policy -->
-            <button class="button  modal__button" data-toggle="modal"> Отправить сообщение</button>
-
-          </form>
-        </div>
-      </div>
-
-
-      <div class="header__text">
-        <h1 class="header__name wow animate__bounceInRight" data-wow-delay="1s">Данилов Иван</h1>
-        <h3 class="header__welcome wow animate__bounceInRight" data-wow-delay="1.5s">Рад Вас приветствовать на странице
-          моего резюме. Надеюсь, то, что Вы здесь узнаете
-          обо мне, положит начало нашему сотрудничеству. </h3>
-      </div>
-      <!-- <div class="header__button wow animate__backOutRight">
-        <button id="footer_modal_window">Написать мне</button>
-      </div> -->
-    </div>
-  </header>
-
-  <div class="body__wrapp">
-    <!-- Блок обо мне  -->
-    <div class="data ">
-      <div class="container">
-        <div class="data__wrapp">
-          <div class="data__skills">
-            <div class="data__skill">
-              <div class="data__skill-header wow animate__flipInY">
-                <img src="./img/skills.png" alt="skills">
-                <h3>Skills</h3>
-              </div>
-              <div class="data__skill-body">
-                <ul class="data__skill-row">
-                  <li>Softskils</li>
-                  <li>Стрессоустойчивость</li>
-                  <li>Способность работать в потоке многозадачности</li>
-                  <li>Честность</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Flex</li>
-                  <li>Sass</li>
-                  <li>JS
-                    <ol>
-                      <li>Slick-slider</li>
-                      <li>Burger-меню</li>
-                      <li>Закрытие/открытие модального окна</li>
-                    </ol>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="data__contacts ">
-              <div class="data__contacts-header wow animate__flipInY">
-                <img src="./img/contacts.png" alt="contacts">
-                <h3>Contacts</h3>
-              </div>
-              <div class="data__contacts-body">
-                <div class="data__contacts-row ">
-                  <p>Phone:</p>
-                  <ul>
-                    <li>+ 373 779 82 502</li>
-                    <li>+ 373 69 878 373</li>
-                  </ul>
-                </div>
-                <div class="data__contacts-row">
-                  <p>Gmail:</p>
-                  <p>vanish475@gmail.com</p>
-                </div>
-                <div class="data__contacts-row">
-                  <p>Telegram:</p>
-                  <p>@Ummca</p>
-                </div>
-
-                <div class="data__contacts-row">
-                  <p>Viber:</p>
-                  <p>+ 373 779 82 502</p>
-                </div>
-
-                <div class="data__contacts-row">
-                  <p>WhatsApp:</p>
-                  <p>+ 373 779 82 502</p>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          <div class="data__about-me">
-            <div class="data__about-me--section">
-              <div class="data__about-me--header wow animate__flipInY">
-                <img src="./img/manager.png" alt="ManagerExperience">
-                <h3>Manager Experience</h3>
-              </div>
-              <div class="data__about-me--body">
-                <p>С января 2016 года по апрель 2021 года я работал менеджером по работе с клиентом в компании <a
-                    href="http://www.rvt.md/" target="_blank">Ремонт вычислительной техники.</a></p>
-                <p>Администрирование всей работы осуществлялось в программе 1С</p>
-                <p>Моей задачей была приемка оборудования которое клиент приносит в ремонт. Важным делом на этом этапе
-                  было правильно понять жалобу клиента и далее передать её техническому специалисту, который будет
-                  производить ремонт, а так же договориться о сроках и стоимости ремонта.</p>
-
-                <p>Далее я координировал процесс ремонта, держал клиента в курсе событий. При необходимости выставлял
-                  техникам приоритет ремонтов оборудования и согласовывал необходимые вопросы с клиентом.
-                  По готовности клиентского оборудования - сообщал об этом клиенту.</p>
-
-                <p>Так же в мои задачи входило поиск новых клиентов по другим направлениям. Обработка жалоб, повторных
-                  обращений и рекламаций. Общение с "тяжёлыми" клиентами. Обработка холодных клиентов.</p>
-
-                <p>При работе с юр. лицами я оформлял счета, накладные, составлял договора, сметы и коммерческие
-                  предложения.</p>
-
-                <p>На протяжении 5 лет работы я обучил менеджерской работе новых сотрудников, с которыми мы стали одной
-                  командой.</p>
-              </div>
-            </div>
-            <div class="data__about-me--section">
-              <div class="data__about-me--header wow animate__flipInY">
-                <img src="./img/development.png" alt="Development">
-                <h3>Frontend Development</h3>
-              </div>
-              <div class="data__about-me--body">
-                <p>Я прошел платные курсы по верстке в компании <a href="https://glo.academy/" target="_blank">Glo
-                    Academy.</a> </p>
-                <p>На этих курсах я ознакомился с html5 и сss3. В рамках учебного процесса мною был сверстан реальный
-                  макет. В процессе обучения я научился:
-                  <ul>
-                    <li>подключать шрифты несколькими способами</li>
-                    <li>познакомился с Sass, он мне очень понравился!</li>
-                    <li>ознакомился с БЭМ-методологией</li>
-                    <li>хорошо овладел технологией Flex</li>
-                    <li>научился делать слайдер</li>
-                    <li>показывать и скрывать модальное окно</li>
-                    <li>ознакомлся с настройкой валидации форм при помощи JS</li>
-                    <li>ознакомился с настройкой отправки писем из формы со страницы сайта на gmail-почту при помощи
-                      PHP.</li>
-                  </ul>
-
-                  <p>После окончания курсов продолжал ежедневно практиковать и развивать свои навыки в верстке,
-                    занимаясь
-                    с ментором. В рамках этой практике мною было выполненно несколько коммерческих проектов.</p>
-                  <p>На данный момент продолжаю развиваться, изучаю React и английскйи язык.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-    <!-- /data -->
-    <section class="working">
-      <h3 class="working__title wow animate__flipInY">Мои работы</h3>
-
-      <div class="slider-2">
+    <header>
         <div class="container">
-          <div class="slider-block ">
+            <div class="header__wrapp">
+                <div class="header__logo">
+                    <img src="./img/Athena logo 1.png" alt="Лого">
+                </div>
+                <!-- header__logo -->
+                <div class="header__nav">
+                    <ul>
+                        <li>Our Services</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <!-- header__nav -->
+                <div class="header__button">
+                    <button>Request a call</button>
+                </div>
+                <!-- /.header__button -->
+            </div>
+            <!-- header__wrapp -->
 
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/TureckiRemont.hithub.io/">
-              <h2 class="slideblk__title">Турецкий ремонт</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/ByuroPerevodov.github.io/">
-              <h2 class="slideblk__title">Бюро переводов ASB</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                    <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/commentsPage.github.io/">
-              <h2 class="slideblk__title">Страница с отзывами</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                      <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/404Page.github.io/">
-              <h2 class="slideblk__title">Страница 404</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                        <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/homePagePRTU.github.io/">
-              <h2 class="slideblk__title">Главная страница для сайта PRTU</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                          <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/feedbackPagePRTU.github.io/">
-              <h2 class="slideblk__title">Страница обратной связи для сайта PRTU</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                          <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/mapPagePRTU.github.io/">
-              <h2 class="slideblk__title">Страница с картой для сайта PRTU</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                            <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/votePageSoikino.github.io/">
-              <h2 class="slideblk__title">Страница голосований для сайта Новое Сойкино</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                            <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-
-            <a class="slideblk" target="blanc" href="https://umka1993.github.io/settingsPageSoikino.github.io/">
-              <h2 class="slideblk__title">Страница настроек для сайта Новое Сойкино</h2>
-              <!-- <p class="slideblk__subtitle">Направление: Риск менеджмента</p>
-                          <p class="slideblk__time">13 марта - 25 марта</p> -->
-            </a>
-
-          </div>
         </div>
-      </div>
-    </section>
+
+    </header>
+
+    <div class="body__wrapp">
+        <section class="main">
+            <div class="container">
+                <div class="main__wrapp">
+                    <h1 class="main__header">ATHENA</h1>
+                    <!-- /.main__header -->
+                    <span class="main__text">LEGAL GROUP</span>
+                    <!-- /.main__text -->
+                    <div class="main__title">
+                        <p>Our priority is to help our clients cope with family problems by directing them towards a peaceful resolution.</p>
+                    </div>
+                    <!-- /.title -->
+                    <div class="main__button">
+                        <button>Get a free consultation</button>
+                    </div>
+                    <!-- /.main__button -->
+                    <div class="main__blocks">
+                        <div class="block">
+                            <p>12</p>
+                            <span>Years of practice
+                                in thelegal services field</span>
+                        </div>
+                        <!-- /.block -->
+                        <div class="block">
+                            <p>20+</p>
+                            <span>Professional lawyers
+                                in different judicial areas</span>
+                        </div>
+                        <!-- /.block -->
+                        <div class="block">
+                            <p>5000+</p>
+                            <span>Legal cases
+                                successfully completed</span>
+                        </div>
+                        <!-- /.block -->
+                    </div>
+                    <!-- /.main__blocks -->
+                </div>
+                <!-- /.main__wrapp -->
+            </div>
+            <!-- container -->
+        </section>
+        <!-- /.main -->
+
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us__title">About Us</div>
+                <!-- /.about-us__title -->
+                <div class="about-us__subtitle">
+                    <p>Our priority is to help our clients cope with family problems by directing them towards a peaceful resolution.</p>
+                </div>
+                <!-- /.about-us__subtitle -->
+                <div class="about-us__wrapp">
+                    <div class="about-us__col1 col1">
+                        <p>While issues related to family law can have drastic effects on your future, these can be minimized if managed appropriately.</p>
+                        <p>Family lawyers at Athena have extensive experience in addressing the following legal issues:</p>
+                        <div class="col1__uls">
+                            <ul>
+                                <li>Separation or divorce</li>
+                                <li>Child custody and access</li>
+                                <li>Family Justice Services</li>
+                                <li>Child protection and adoptions</li>
+                            </ul>
+                            <ul>
+                                <li>Division or equalization of family property</li>
+                                <li>Support for you, your spouse, and children</li>
+                                <li>Treatment of a matrimonial home</li>
+                                <li>Enforcement of support payments</li>
+                            </ul>
+                        </div>
+                        <!-- /.col1__uls -->
+                        <p>We provide family law services nation wide.</p>
+                        <p>The initial consultation is free of charge. Whatever your legal issue is, you will feel calmer and more confident after discussing it with a legal specialist and developing a strategy for the protection of your legal interests.</p>
+
+                        <div class="col1__button">
+                            <button>Get a free consultation</button>
+                        </div>
+                        <!-- /.col1__button -->
+                    </div>
+                    <!-- "about-us__col1 col1 -->
+                    <div class="about-us__col2 col2">
+                        <div class="col2__form form">
+                            <div class="form">
+                                <div class="form__title">Get a free consultation</div>
+                                <!-- /.form__title -->
+                                <div class="form__subtitile">
+                                    <p>Leave your contacts and our specialists will call you back</p>
+                                </div>
+                                <!-- /.form__subtitile -->
+                                <input type="text" class="form__name" placeholder="Your name*">
+                                <input type="text" class="form__phone" placeholder="Your phone*">
+                                <input type="text" class="form__email" placeholder="Email">
+                                <div class="form__button">
+                                    <button>Submit</button>
+                                </div>
+                                <!-- form__button -->
+                                <div class="form__checkbox">
+                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox"> By clicking the button you agree to the terms of processing your data</label>
+                                </div>
+                                <!-- /.form__checkbox -->
+                            </div>
+                            <!-- /.form -->
+                        </div>
+                        <!-- /.col2__form -->
+                    </div>
+                </div>
+                <!-- /.about-us__wrapp -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.about-us -->
+        <section class="our">
+            <div class="container">
+                <div class="our__title">
+                    <p>Our Services</p>
+                </div>
+                <!-- /.our__title -->
+                <div class="our__wrapp">
+                    <div class="our__card">
+                        <div class="our__card-wrap"> <img src="./img/our-home.png" alt="home">
+                            <span>Separation
+                                        or divorce</span></div>
+                        <div class="our__back"><span>Athena's team always aims at amicable and agreeable separations to avoid trial. However, in cases that don't seem to be resolved amicably, we do everything we can to protect our client's interests in court.</span>
+                            <button>Get a free consultation </button>
+                        </div>
+                        <!-- /.our__back -->
+                    </div>
+                    <!-- /.our__card -->
+
+                    <div class="our__card">
+                        <div class="our__card-wrap">
+                            <img src="./img/our-man.png" alt="man">
+                            <span>Enforcement of
+                                    support payments</span>
+                        </div>
+                        <div class="our__back"><span>No matter what circumstances are, children must have support and protection. Athena Group offers the most competent and experienced lawyers to help our clients protect their families and children.</span>
+                            <button>Get a free consultation </button>
+                        </div>
+                        <!-- /.our__back -->
+                    </div>
+                    <!-- /.our__card -->
+                    <div class="our__card">
+                        <div class="our__card-wrap">
+                            <img src="./img/our-famili.png" alt="famili">
+                            <span>Child protection
+                                    and adoptions</span>
+
+
+
+                        </div>
+                        <!-- /.card__wrap -->
+                        <div class="our__back"><span>Adoption is a complex process that differs according to the type of adoption, where the child is from, variances in state laws, and other factors. Therefore, it's best to consult with a family law attorney.</span>
+                            <button>Get a free consultation </button>
+                        </div>
+                        <!-- /.our__back -->
+                    </div>
+                    <!-- /.our__card -->
+
+
+
+
+                    <div class="our__card">
+                        <div class="our__card-wrap">
+                            <img src="./img/our-hand.png" alt="hand">
+                            <span>Child custody
+                                    and access</span>
+
+                        </div>
+                        <!-- /.card__wrap -->
+                        <div class="our__back">
+                            <span>Child custody and access cases are usually a part of larger divorce cases. If the parents' interests don't coincide, we know what to do — try every possible resource to meet our clients' needs and protect their rights.</span>
+                            <button>Get a free consultation </button>
+                        </div>
+                        <!-- /.our__back -->
+                    </div>
+                    <!-- /.our__card -->
+
+
+
+                </div>
+                <!-- /.our__wrapp -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /.our -->
+        <div class="testimonials">
+            <div class="testimonials__title">
+                <p>Testimonials</p>
+            </div>
+            <!-- /.testimonials__title -->
+            <div class="testimonials__subtitle">
+                <p>Nothing will tell you more about Athena’s cases than our clients themselves.</p>
+            </div>
+            <!-- /.testimonials__subtitle -->
+            <div class="testimonials__slider">
+                <div class="container">
+                    <div class="slider-block">
+                        <div class="slideblk">
+                            <img src="./img/quotes 1.png" alt="feedback">
+                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
+                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
+                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                            <p>
+                                <span class="name">Richard D.</span>
+                                <!-- /.name -->
+                                <span class="day">05/2020</span>
+                                <!-- /.day -->
+                            </p>
+                        </div>
+                        <!-- slideblk -->
+                        <div class="slideblk">
+                            <img src="./img/quotes 1.png" alt="feedback">
+                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
+                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
+                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                            <p>
+                                <span class="name">Richard D.</span>
+                                <!-- /.name -->
+                                <span class="day">05/2020</span>
+                                <!-- /.day -->
+                            </p>
+                        </div>
+                        <!-- slideblk -->
+                        <div class="slideblk">
+                            <img src="./img/quotes 1.png" alt="feedback">
+                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
+                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
+                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                            <p>
+                                <span class="name">Richard D.</span>
+                                <!-- /.name -->
+                                <span class="day">05/2020</span>
+                                <!-- /.day -->
+                            </p>
+                        </div>
+                        <!-- slideblk -->
+                        <div class="slideblk">
+                            <img src="./img/quotes 1.png" alt="feedback">
+                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
+                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
+                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                            <p>
+                                <span class="name">Richard D.</span>
+                                <!-- /.name -->
+                                <span class="day">05/2020</span>
+                                <!-- /.day -->
+                            </p>
+                        </div>
+                        <!-- slideblk -->
+                        <div class="slideblk">
+                            <img src="./img/quotes 1.png" alt="feedback">
+                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
+                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
+                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                            <p>
+                                <span class="name">Richard D.</span>
+                                <!-- /.name -->
+                                <span class="day">05/2020</span>
+                                <!-- /.day -->
+                            </p>
+                        </div>
+                        <!-- slideblk -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- testimonials__slider -->
+
+
+        </div>
+        <!-- /.testimonials -->
+        <section class="questions">
+            <div class="container">
+                <div class="questions__wrapp">
+                    <div class="questions__title">
+                        <p>Have you questions</p>
+                    </div>
+                    <!-- /.questions__title -->
+                    .
+                    <div class="questions__subtitle">
+                        <p>Leave your contacts for a free consultation</p>
+                    </div>
+                    <!-- /.questions__subtitle -->
+                    <div class="subtitle__form">
+                        <div class="subtitle__form--wrapp">
+                            <input type="text" placeholder="Your name*">
+                            <input type="text" placeholder="Your phone*">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Message* " id="message">
+                            <button>Submit</button>
+                        </div>
+                        <!-- subtitle__form--wrapp -->
+                        <div class="subtitle__form--checkbox">
+                            <input type="checkbox" id="subtitle__form--checkbox">
+                            <label for="subtitle__form--checkbox">
+                                By clicking the button you agree to the terms of processing your data
+
+
+                            </label>
+
+                        </div>
+                        <!-- /.subtitle__form--chckbox -->
+
+
+                    </div>
+                    <!-- /.subtitle__form -->
+                </div>
+                <!-- /.questions__wrapp -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /.questions -->
 
 
 
@@ -312,65 +366,60 @@
 
 
 
-
-
-
-  </div>
-
-
-
-
-
-
-  <!-- body__wrapp -->
-
-
-  <footer class="footer">
-    <!-- <div class="footer__btn">
-      <button id="btn_modal_window">Написать мне</button>
-    </div> -->
-    <div class="footer__wrapp">
-      <a href="https://vk.com/umcik" target="blanc">
-        <img src="./img/vk.png" alt="VK">
-      </a>
-      <a href="https://www.instagram.com/umka_danilov/" target="blanc" class="wow animate__bounceIn">
-        <img src="./img/insta.png" alt="Instagram">
-      </a>
-      <a href="https://t.me/Ummca" target="blanc" class="wow animate__bounceIn">
-        <img src="./img/telegram.png" alt="Telegram">
-      </a>
-      <a href="viber://chat?number=%2B+37377982502" style="display: none;" target="blanc" class="wow animate__bounceIn">
-        <img src="./img/viber.png" alt="Viber">
-      </a>
     </div>
-
-    <a class="footer__button" href="#top"></a>
-
-  </footer>
-  <!-- /.footer -->
+    <!-- body__wrapp -->
 
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapp">
+                <div class="footer__logo"><img src="./img/Athena logo 1.png" alt="Athena-logo"></div>
+                <!-- /.footer__logo -->
+                <div class="footer__adress">
+                    <div class="footer__head">
+                        <img src="./img/Map.png" alt="adress"><span>Address</span></div>
+                    <!-- /.footer__head -->
+                    <p>38 avenue de l'Opera F-75002 Paris, France
+                    </p>
+                </div>
+                <!-- /.footer__adress -->
+                <div class="footer__phone">
+                    <div class="footer__head">
+                        <img src="./img/phone.png" alt="phone"><span>Phone</span></div>
+                    <!-- /.footer__head -->
+                    <a href="tel:#">( 33 1) 42 68 53 00</a>
+                    <a href="tel:#">( 33 1) 42 68 53 01  </a>
+                </div>
+                <!-- /.footer__phone -->
+                <div class="footer__email">
+                    <div class="footer__head">
+                        <img src="./img/email.png" alt="email">
+                        <span>Email</span></div>
+                    <!-- /.footer__head -->
+                    <a href="mailto:secretariat(at)google.org">secretariat(at)google.org</a>
+                </div>
+                <!-- /.footer__email -->
+            </div>
+            <!-- /.footer__wrapp -->
+
+            <div class="footer__policy">
+                <span>© Athena 2021. All rights reserved.</span>
+                <span>Privacy policy</span>
+            </div>
+            <!-- footer__policy -->
+        </div>
+        <!-- /.container -->
+
+    </footer>
+    <!-- /.footer -->
 
 
 
+    <!-- Скрипт owl.carousel для слайдера -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Общие скрипты -->
+    <script src="assets/js/index.js"></script>
 
-
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/main.js"></script>
-  <!-- Скрипт owl.carousel для слайдера -->
-  <script src="assets/js/slick.min.js"></script>
-  <!-- Общие скрипты -->
-  <script src="assets/js/index.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-  <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
-  <script src="./js/wow.min.js"></script>
-  <!-- <script src="js/jquery.validate.min.js"></script> -->
-  <!-- <script src="js/jquery.mask.min.js"></script>   -->
-
-
-  <script>
-    new WOW().init();
-  </script>
 </body>
 
 
