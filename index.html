@@ -15,24 +15,52 @@
 
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header__wrapp">
                 <div class="header__logo">
-                    <img src="./img/Athena logo 1.png" alt="Лого">
+                    <a href="#">
+                        <img src="./img/Group 18.jpg" alt="Лого">
+                    </a>
                 </div>
+
+                <div class="menu-burger__header">
+                    <img src="./img/menu.png" alt="menu-burger">
+                </div>
+
                 <!-- header__logo -->
-                <div class="header__nav">
-                    <ul>
-                        <li>Our Services</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>Testimonials</li>
+                <nav class="header__nav" id="menu">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./img/logo_.svg" alt="Лого">
+                        </a>
+                    </div>
+                    <ul class="header__menu">
+                        <a href="#Services" id="aour">
+                            <li>Our Services</li>
+                        </a>
+                        <a class="header__about" href="#about-us" id="about">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#Contact" id="acontact">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="#Testimonials" id="atestimonials">
+                            <li>Testimonials</li>
+                        </a>
                     </ul>
-                </div>
+                    <button class="Get_consultation">Get a free consultation</button>
+                    <div class="close__burger">
+                        <img src="./img/close-burger.png" alt="close-burger">
+                    </div>
+
+                </nav>
                 <!-- header__nav -->
+
+                <!-- /.menu-burger__header -->
                 <div class="header__button">
                     <button>Request a call</button>
+
                 </div>
                 <!-- /.header__button -->
             </div>
@@ -55,358 +83,417 @@
                     </div>
                     <!-- /.title -->
                     <div class="main__button">
-                        <button>Get a free consultation</button>
+                        <button class="Get_consultation main__button--none">Get a free consultation</button>
+                        <button type='button' class="Get_consultation main__button--submit ">Submit</button>
                     </div>
                     <!-- /.main__button -->
-                    <div class="main__blocks">
-                        <div class="block">
-                            <p>12</p>
-                            <span>Years of practice
-                                in thelegal services field</span>
-                        </div>
-                        <!-- /.block -->
-                        <div class="block">
-                            <p>20+</p>
-                            <span>Professional lawyers
-                                in different judicial areas</span>
-                        </div>
-                        <!-- /.block -->
-                        <div class="block">
-                            <p>5000+</p>
-                            <span>Legal cases
-                                successfully completed</span>
-                        </div>
-                        <!-- /.block -->
-                    </div>
-                    <!-- /.main__blocks -->
+
+
                 </div>
                 <!-- /.main__wrapp -->
             </div>
             <!-- container -->
         </section>
         <!-- /.main -->
+        <div class="main__blocks">
+            <div class="block">
+                <div class="block__number">
+                    <p>12</p>
+                </div>
+                <div class="block__subtitle">
+                    <span>Years of practice <br>
+                        in thelegal services field</span>
+                </div>
+                <!-- /.block__subtitle -->
+            </div>
+            <!-- /.block -->
+            <div class="block">
+                <div class="block__number">
+                    <p>20+</p>
+                </div>
+                <div class="block__subtitle">
+                    <span>Professional lawyers <br>
+                        in different judicial areas</span>
+                </div>
+            </div>
+            <!-- /.block -->
+            <div class="block">
+                <div class="block__number">
+                    <p>5000+</p>
+                </div>
+                <div class="block__subtitle">
+                    <span>Legal cases<br>
+                        successfully completed</span>
 
-        <section class="about-us">
+                </div>
+            </div>
+            <!-- /.block -->
+        </div>
+        <!-- /.main__blocks -->
+
+        <section class="about-us" id="about-us">
             <div class="container">
-                <div class="about-us__title">About Us</div>
-                <!-- /.about-us__title -->
-                <div class="about-us__subtitle">
-                    <p>Our priority is to help our clients cope with family problems by directing them towards a peaceful resolution.</p>
-                </div>
-                <!-- /.about-us__subtitle -->
-                <div class="about-us__wrapp">
-                    <div class="about-us__col1 col1">
-                        <p>While issues related to family law can have drastic effects on your future, these can be minimized if managed appropriately.</p>
-                        <p>Family lawyers at Athena have extensive experience in addressing the following legal issues:</p>
-                        <div class="col1__uls">
-                            <ul>
-                                <li>Separation or divorce</li>
-                                <li>Child custody and access</li>
-                                <li>Family Justice Services</li>
-                                <li>Child protection and adoptions</li>
-                            </ul>
-                            <ul>
-                                <li>Division or equalization of family property</li>
-                                <li>Support for you, your spouse, and children</li>
-                                <li>Treatment of a matrimonial home</li>
-                                <li>Enforcement of support payments</li>
-                            </ul>
-                        </div>
-                        <!-- /.col1__uls -->
-                        <p>We provide family law services nation wide.</p>
-                        <p>The initial consultation is free of charge. Whatever your legal issue is, you will feel calmer and more confident after discussing it with a legal specialist and developing a strategy for the protection of your legal interests.</p>
-
-                        <div class="col1__button">
-                            <button>Get a free consultation</button>
-                        </div>
-                        <!-- /.col1__button -->
+                <div class="wrapp">
+                    <div class="about-us__title">
+                        <p>About Us</p>
                     </div>
-                    <!-- "about-us__col1 col1 -->
-                    <div class="about-us__col2 col2">
-                        <div class="col2__form form">
-                            <div class="form">
-                                <div class="form__title">Get a free consultation</div>
-                                <!-- /.form__title -->
-                                <div class="form__subtitile">
-                                    <p>Leave your contacts and our specialists will call you back</p>
-                                </div>
-                                <!-- /.form__subtitile -->
-                                <input type="text" class="form__name" placeholder="Your name*">
-                                <input type="text" class="form__phone" placeholder="Your phone*">
-                                <input type="text" class="form__email" placeholder="Email">
-                                <div class="form__button">
-                                    <button>Submit</button>
-                                </div>
-                                <!-- form__button -->
-                                <div class="form__checkbox">
-                                    <input type="checkbox" class="checkbox" id="checkbox">
-                                    <label for="checkbox"> By clicking the button you agree to the terms of processing your data</label>
-                                </div>
-                                <!-- /.form__checkbox -->
+                    <!-- /.about-us__title -->
+                    <div class="about-us__subtitle">
+                        <p>Our priority is to help our clients cope with family problems by directing them towards a peaceful resolution.</p>
+                    </div>
+                    <!-- /.about-us__subtitle -->
+                    <div class="about-us__wrapp">
+                        <div class="about-us__col1 col1">
+                            <p>While issues related to family law can have drastic effects on your future, these can be minimized if managed appropriately.</p>
+                            <p>Family lawyers at Athena have experience in addressing the following legal issues:</p>
+                            <div class="col1__uls">
+                                <ul>
+                                    <li>Separation or divorce</li>
+                                    <li>Child custody and access</li>
+                                    <li>Family Justice Services</li>
+                                    <li>Child protection and adoptions</li>
+                                </ul>
+                                <ul>
+                                    <li>Division or equalization of family property</li>
+                                    <li>Support for you, your spouse, and children</li>
+                                    <li>Treatment of a matrimonial home</li>
+                                    <li>Enforcement of support payments</li>
+                                </ul>
                             </div>
-                            <!-- /.form -->
+                            <!-- /.col1__uls -->
+                            <p>We provide family law services nation wide.</p>
+                            <p>The initial consultation is free of charge. Whatever your legal issue is, you will feel calmer and more confident after discussing it with a legal specialist and developing a strategy for the protection of your legal interests.</p>
+
+                            <div class="col1__button">
+                                <button class="Get_consultation">Get a free consultation</button>
+                            </div>
+                            <!-- /.col1__button -->
                         </div>
-                        <!-- /.col2__form -->
+                        <!-- "about-us__col1 col1 -->
+                        <div class="about-us__col2 col2">
+                            <div class="col2__form form">
+                                <form class="form">
+                                    <div class="form__title">Get a free consultation</div>
+                                    <!-- /.form__title -->
+                                    <div class="form__subtitile">
+                                        <p>Leave your contacts and our specialists will call you back</p>
+                                    </div>
+                                    <!-- /.form__subtitile -->
+                                    <input type="text" class="form__name" placeholder="Your name*">
+                                    <input type="text" class="form__phone" placeholder="Your phone*">
+                                    <input type="text" class="form__email" placeholder="Email">
+                                    <div class="form__button">
+                                        <button type='button' class="Submit">Submit</button>
+                                    </div>
+                                    <!-- form__button -->
+                                    <div class="form__checkbox">
+                                        <label for="checkbox">
+                                        <input type="checkbox" class="checkbox" id="checkbox">
+                                         By clicking the button you agree to the terms of processing your data</label>
+                                    </div>
+                                    <!-- /.form__checkbox -->
+                                </form>
+                                <!-- /.form -->
+                            </div>
+                            <!-- /.col2__form -->
+                        </div>
                     </div>
+                    <!-- /.about-us__wrapp -->
                 </div>
-                <!-- /.about-us__wrapp -->
+                <!-- /.about__wrapp -->
             </div>
             <!-- /.container -->
         </section>
         <!-- /.about-us -->
-        <section class="our">
+        <section class="our" id="services">
             <div class="container">
-                <div class="our__title">
-                    <p>Our Services</p>
+                <div class="wrapp">
+                    <div class="our__title">
+                        <p>Our Services</p>
+                    </div>
+                    <!-- /.our__title -->
+                    <div class="our__wrapp">
+                        <div class="our__col">
+
+                            <div class="our__card">
+                                <div class="our__card-wrap">
+                                    <div class="our__card--img">
+                                        <img src="./img/our_home.svg" alt="home">
+                                    </div>
+                                    <span>Separation <br>
+                                                    or divorce</span>
+                                </div>
+                                <div class="our__back">
+                                    <div class="our__back--wrapp">
+                                        <span>Athena's team always aims at amicable and agreeable separations to avoid trial. However, in cases that don't seem to be resolved amicably, we do everything we can to protect our client's interests in court.</span>
+                                        <button class="Get_consultation">Get a free consultation </button>
+                                    </div>
+                                    <!-- /.our__back--wrapp -->
+
+
+                                </div>
+                                <!-- /.our__back -->
+
+                            </div>
+                            <!-- /.our__card -->
+
+                            <div class="our__card">
+                                <div class="our__card-wrap">
+                                    <div class="our__card--img">
+                                        <img src="./img/our_famili.svg" alt="famili">
+                                    </div>
+                                    <span>Child protection <br>
+                                            and adoptions</span>
+
+                                </div>
+                                <!-- /.card__wrap -->
+                                <div class="our__back">
+                                    <div class="our__back--wrapp">
+                                        <span>Adoption is a complex process that differs according to the type of adoption, where the child is from, variances in state laws, and other factors. Therefore, it's best to consult with a family law attorney.</span>
+                                        <button class="Get_consultation">Get a free consultation </button>
+                                    </div>
+                                    <!-- /.our__back--wrapp -->
+                                </div>
+                                <!-- /.our__back -->
+                            </div>
+                            <!-- /.our__card -->
+
+                        </div>
+                        <!-- our__col -->
+                        <div class="our__col">
+                            <div class="our__card">
+                                <div class="our__card-wrap">
+                                    <div class="our__card--img">
+                                        <img src="./img/our_man.svg" alt="man">
+                                    </div>
+                                    <span>Enforcement of <br>
+                                            support payments</span>
+                                </div>
+                                <div class="our__back">
+                                    <div class="our__back--wrapp">
+                                        <span>No matter what circumstances are, children must have support and protection. Athena Group offers the most competent and experienced lawyers to help our clients protect their families and children.</span>
+                                        <button class="Get_consultation">Get a free consultation </button>
+                                    </div>
+                                    <!-- /.our__back--wrapp -->
+                                </div>
+                                <!-- /.our__back -->
+                            </div>
+                            <!-- /.our__card -->
+                            <div class="our__card">
+                                <div class="our__card-wrap">
+                                    <div class="our__card--img">
+                                        <img src="./img/our_hand.svg" alt="hand">
+                                    </div>
+                                    <span>Child custody <br>
+                                            and access</span>
+
+                                </div>
+                                <!-- /.card__wrap -->
+                                <div class="our__back">
+                                    <div class="our__back--wrapp">
+                                        <span>Child custody and access cases are usually a part of larger divorce cases. If the parents' interests don't coincide, we know what to do — try every possible resource to meet our clients' needs and protect their rights.</span>
+                                        <button class="Get_consultation">Get a free consultation </button>
+                                    </div>
+                                    <!-- /.our__back--wrapp -->
+                                </div>
+                                <!-- /.our__back -->
+                            </div>
+                            <!-- /.our__card -->
+                        </div>
+                        <!-- our__col -->
+                    </div>
+                    <!-- /.our__wrapp -->
                 </div>
-                <!-- /.our__title -->
-                <div class="our__wrapp">
-                    <div class="our__card">
-                        <div class="our__card-wrap"> <img src="./img/our-home.png" alt="home">
-                            <span>Separation
-                                        or divorce</span></div>
-                        <div class="our__back"><span>Athena's team always aims at amicable and agreeable separations to avoid trial. However, in cases that don't seem to be resolved amicably, we do everything we can to protect our client's interests in court.</span>
-                            <button>Get a free consultation </button>
-                        </div>
-                        <!-- /.our__back -->
-                    </div>
-                    <!-- /.our__card -->
-
-                    <div class="our__card">
-                        <div class="our__card-wrap">
-                            <img src="./img/our-man.png" alt="man">
-                            <span>Enforcement of
-                                    support payments</span>
-                        </div>
-                        <div class="our__back"><span>No matter what circumstances are, children must have support and protection. Athena Group offers the most competent and experienced lawyers to help our clients protect their families and children.</span>
-                            <button>Get a free consultation </button>
-                        </div>
-                        <!-- /.our__back -->
-                    </div>
-                    <!-- /.our__card -->
-                    <div class="our__card">
-                        <div class="our__card-wrap">
-                            <img src="./img/our-famili.png" alt="famili">
-                            <span>Child protection
-                                    and adoptions</span>
-
-
-
-                        </div>
-                        <!-- /.card__wrap -->
-                        <div class="our__back"><span>Adoption is a complex process that differs according to the type of adoption, where the child is from, variances in state laws, and other factors. Therefore, it's best to consult with a family law attorney.</span>
-                            <button>Get a free consultation </button>
-                        </div>
-                        <!-- /.our__back -->
-                    </div>
-                    <!-- /.our__card -->
-
-
-
-
-                    <div class="our__card">
-                        <div class="our__card-wrap">
-                            <img src="./img/our-hand.png" alt="hand">
-                            <span>Child custody
-                                    and access</span>
-
-                        </div>
-                        <!-- /.card__wrap -->
-                        <div class="our__back">
-                            <span>Child custody and access cases are usually a part of larger divorce cases. If the parents' interests don't coincide, we know what to do — try every possible resource to meet our clients' needs and protect their rights.</span>
-                            <button>Get a free consultation </button>
-                        </div>
-                        <!-- /.our__back -->
-                    </div>
-                    <!-- /.our__card -->
-
-
-
-                </div>
-                <!-- /.our__wrapp -->
+                <!-- /.wrapp -->
 
             </div>
             <!-- /.container -->
 
         </section>
         <!-- /.our -->
-        <div class="testimonials">
-            <div class="testimonials__title">
-                <p>Testimonials</p>
-            </div>
-            <!-- /.testimonials__title -->
-            <div class="testimonials__subtitle">
-                <p>Nothing will tell you more about Athena’s cases than our clients themselves.</p>
-            </div>
-            <!-- /.testimonials__subtitle -->
-            <div class="testimonials__slider">
-                <div class="container">
-                    <div class="slider-block">
-                        <div class="slideblk">
-                            <img src="./img/quotes 1.png" alt="feedback">
-                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
-                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
-                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
-                            <p>
-                                <span class="name">Richard D.</span>
-                                <!-- /.name -->
-                                <span class="day">05/2020</span>
-                                <!-- /.day -->
-                            </p>
-                        </div>
-                        <!-- slideblk -->
-                        <div class="slideblk">
-                            <img src="./img/quotes 1.png" alt="feedback">
-                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
-                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
-                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
-                            <p>
-                                <span class="name">Richard D.</span>
-                                <!-- /.name -->
-                                <span class="day">05/2020</span>
-                                <!-- /.day -->
-                            </p>
-                        </div>
-                        <!-- slideblk -->
-                        <div class="slideblk">
-                            <img src="./img/quotes 1.png" alt="feedback">
-                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
-                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
-                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
-                            <p>
-                                <span class="name">Richard D.</span>
-                                <!-- /.name -->
-                                <span class="day">05/2020</span>
-                                <!-- /.day -->
-                            </p>
-                        </div>
-                        <!-- slideblk -->
-                        <div class="slideblk">
-                            <img src="./img/quotes 1.png" alt="feedback">
-                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
-                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
-                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
-                            <p>
-                                <span class="name">Richard D.</span>
-                                <!-- /.name -->
-                                <span class="day">05/2020</span>
-                                <!-- /.day -->
-                            </p>
-                        </div>
-                        <!-- slideblk -->
-                        <div class="slideblk">
-                            <img src="./img/quotes 1.png" alt="feedback">
-                            <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received. The lawyer
-                                that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have been completely taken
-                                advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
-                            <p>
-                                <span class="name">Richard D.</span>
-                                <!-- /.name -->
-                                <span class="day">05/2020</span>
-                                <!-- /.day -->
-                            </p>
-                        </div>
-                        <!-- slideblk -->
-
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="wrapp">
+                    <div class="testimonials__title">
+                        <p>Testimonials</p>
                     </div>
+                    <!-- /.testimonials__title -->
+                    <div class="testimonials__subtitle">
+                        <p>Nothing will tell you more about Athena’s cases than our clients themselves.</p>
+                    </div>
+                    <!-- /.testimonials__subtitle -->
+                    <div class="testimonials__slider">
+                        <div class="container">
+                            <div class="slider-block">
+                                <div class="slideblk">
+                                    <img src="./img/quotes 1.png" alt="feedback">
+                                    <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received.
+                                        The lawyer that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have
+                                        been completely taken advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                                    <p>
+                                        <span class="name">Richard D.</span>
+                                        <!-- /.name -->
+                                        <span class="day">05/2020</span>
+                                        <!-- /.day -->
+                                    </p>
+                                </div>
+                                <!-- slideblk -->
+                                <div class="slideblk">
+                                    <img src="./img/quotes 1.png" alt="feedback">
+                                    <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received.
+                                        The lawyer that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have
+                                        been completely taken advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                                    <p>
+                                        <span class="name">Richard D.</span>
+                                        <!-- /.name -->
+                                        <span class="day">05/2020</span>
+                                        <!-- /.day -->
+                                    </p>
+                                </div>
+                                <!-- slideblk -->
+                                <div class="slideblk">
+                                    <img src="./img/quotes 1.png" alt="feedback">
+                                    <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received.
+                                        The lawyer that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have
+                                        been completely taken advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                                    <p>
+                                        <span class="name">Richard D.</span>
+                                        <!-- /.name -->
+                                        <span class="day">05/2020</span>
+                                        <!-- /.day -->
+                                    </p>
+                                </div>
+                                <!-- slideblk -->
+                                <div class="slideblk">
+                                    <img src="./img/quotes 1.png" alt="feedback">
+                                    <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received.
+                                        The lawyer that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have
+                                        been completely taken advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                                    <p>
+                                        <span class="name">Richard D.</span>
+                                        <!-- /.name -->
+                                        <span class="day">05/2020</span>
+                                        <!-- /.day -->
+                                    </p>
+                                </div>
+                                <!-- slideblk -->
+                                <div class="slideblk">
+                                    <img src="./img/quotes 1.png" alt="feedback">
+                                    <p class="slideblk__text">Since my divorce was an international case and had quite complex circumstances, many Canadian law firms turned me away. However, Athena provided me with no less than the friendliest legal services I’ve ever received.
+                                        The lawyer that assisted me was dedicated and provided wonderful service every step of the way. Thank you, Olga, for helping me through one of the most challenging and complicated times of my life! I would have
+                                        been completely taken advantage of if I hadn’t addressed you! I highly recommended Athena.</p>
+                                    <p>
+                                        <span class="name">Richard D.</span>
+                                        <!-- /.name -->
+                                        <span class="day">05/2020</span>
+                                        <!-- /.day -->
+                                    </p>
+                                </div>
+                                <!-- slideblk -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- testimonials__slider -->
                 </div>
+                <!-- /.wrapp -->
             </div>
-            <!-- testimonials__slider -->
+            <!-- /.container -->
 
 
-        </div>
+
+        </section>
         <!-- /.testimonials -->
         <section class="questions">
             <div class="container">
-                <div class="questions__wrapp">
-                    <div class="questions__title">
-                        <p>Have you questions</p>
-                    </div>
-                    <!-- /.questions__title -->
-                    .
-                    <div class="questions__subtitle">
-                        <p>Leave your contacts for a free consultation</p>
-                    </div>
-                    <!-- /.questions__subtitle -->
-                    <div class="subtitle__form">
-                        <div class="subtitle__form--wrapp">
-                            <input type="text" placeholder="Your name*">
-                            <input type="text" placeholder="Your phone*">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Message* " id="message">
-                            <button>Submit</button>
+                <div class="wrapp">
+                    <div class="questions__wrapp">
+                        <div class="questions__title">
+                            <p>Have you questions</p>
                         </div>
-                        <!-- subtitle__form--wrapp -->
-                        <div class="subtitle__form--checkbox">
-                            <input type="checkbox" id="subtitle__form--checkbox">
-                            <label for="subtitle__form--checkbox">
-                                By clicking the button you agree to the terms of processing your data
-
-
-                            </label>
-
+                        <!-- /.questions__title -->
+                        .
+                        <div class="questions__subtitle">
+                            <p>Leave your contacts for a free consultation</p>
                         </div>
-                        <!-- /.subtitle__form--chckbox -->
+                        <!-- /.questions__subtitle -->
+                        <form class="subtitle__form">
+                            <div class="subtitle__form--wrapp">
+                                <input type="text" placeholder="Your name*">
+                                <input type="text" placeholder="Your phone*">
+                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Message* " id="message">
+                                <button type='button' class="Submit">Submit</button>
+                            </div>
+                            <!-- subtitle__form--wrapp -->
+                            <div class="subtitle__form--checkbox">
+                                <input type="checkbox" id="subtitle__form--checkbox">
+                                <label for="subtitle__form--checkbox">
+                                    By clicking the button you agree to the terms of processing your data
+                                </label>
+
+                            </div>
+                            <!-- /.subtitle__form--chckbox -->
 
 
+                        </form>
+                        <!-- /.subtitle__form -->
                     </div>
-                    <!-- /.subtitle__form -->
+                    <!-- /.questions__wrapp -->
                 </div>
-                <!-- /.questions__wrapp -->
+                <!-- /.wrapp -->
 
             </div>
             <!-- /.container -->
 
         </section>
         <!-- /.questions -->
-
-
-
-
-
-
-
     </div>
     <!-- body__wrapp -->
 
-
-    <footer class="footer">
+    <footer class="footer " id="footer">
         <div class="container">
-            <div class="footer__wrapp">
-                <div class="footer__logo"><img src="./img/Athena logo 1.png" alt="Athena-logo"></div>
-                <!-- /.footer__logo -->
-                <div class="footer__adress">
-                    <div class="footer__head">
-                        <img src="./img/Map.png" alt="adress"><span>Address</span></div>
-                    <!-- /.footer__head -->
-                    <p>38 avenue de l'Opera F-75002 Paris, France
-                    </p>
+            <div class="wrapp">
+                <div class="footer__wrapp">
+                    <div class="footer__logo "><img src="./img/Group 18.jpg" alt="Athena-logo"></div>
+                    <!-- /.footer__logo -->
+                    <div class="footer__adress">
+                        <div class="footer__head">
+                            <img src="./img/Map.svg" alt="adress"><span>Address</span></div>
+                        <!-- /.footer__head -->
+                        <p>38 avenue de l'Opera F-75002 Paris, France
+                        </p>
+                    </div>
+                    <!-- /.footer__adress -->
+                    <div class="footer__phone" id="Contact">
+                        <div class="footer__head">
+                            <img src="./img/phone_.svg" alt="phone"><span>Phone</span></div>
+                        <!-- /.footer__head -->
+                        <div class="footer__phones">
+                            <a href="tel:#">( 33 1) 42 68 53 00</a>
+                            <a href="tel:#">( 33 1) 42 68 53 01  </a>
+                        </div>
+                        <!-- /.footer__phones -->
+                    </div>
+                    <!-- /.footer__phone -->
+                    <div class="footer__email">
+                        <div class="footer__head">
+                            <img src="./img/Email_.svg" alt="email">
+                            <span>Email</span></div>
+                        <!-- /.footer__head -->
+                        <a href="mailto:secretariat(at)google.org">secretariat(at)google.org</a>
+                    </div>
+                    <!-- /.footer__email -->
                 </div>
-                <!-- /.footer__adress -->
-                <div class="footer__phone">
-                    <div class="footer__head">
-                        <img src="./img/phone.png" alt="phone"><span>Phone</span></div>
-                    <!-- /.footer__head -->
-                    <a href="tel:#">( 33 1) 42 68 53 00</a>
-                    <a href="tel:#">( 33 1) 42 68 53 01  </a>
-                </div>
-                <!-- /.footer__phone -->
-                <div class="footer__email">
-                    <div class="footer__head">
-                        <img src="./img/email.png" alt="email">
-                        <span>Email</span></div>
-                    <!-- /.footer__head -->
-                    <a href="mailto:secretariat(at)google.org">secretariat(at)google.org</a>
-                </div>
-                <!-- /.footer__email -->
-            </div>
-            <!-- /.footer__wrapp -->
+                <!-- /.footer__wrapp -->
 
-            <div class="footer__policy">
-                <span>© Athena 2021. All rights reserved.</span>
-                <span>Privacy policy</span>
+                <div class="footer__policy">
+                    <span>© Athena 2021. All rights reserved.</span>
+                    <span>Privacy policy</span>
+                </div>
+                <!-- footer__policy -->
             </div>
-            <!-- footer__policy -->
+            <!-- /.wrapp -->
         </div>
         <!-- /.container -->
 
@@ -414,17 +501,84 @@
     <!-- /.footer -->
 
 
+    <div class="modal" id="my_modal">
+        <div class="modal__content">
+            <div class="modal__head">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./img/logo_.svg" alt="Лого">
+                    </a>
+                </div>
+
+                <div class="menu-burger__modal" id="burger">
+                    <img src="./img/menu.png" alt="menu-burger">
+                </div>
+            </div>
+            <div class="close_modal_window">
+                <img src="./img/close.png" alt="close">
+            </div>
+
+            <div class="modal__content--wrapp">
+                <div class="modal__title">
+                    <p>Get a free consultation</p>
+                </div>
+                <!-- /.modal__title -->
+                <div class="modal__subtitle">
+                    <p>Leave your contacts and our specialists will call you back</p>
+                </div>
+                <!-- /.modal__subtitle -->
+                <form action="" class="modal__form">
+                    <input type="text" id="modal__name" placeholder="Your name*">
+                    <input type="text" id="modal__phone" placeholder="Your phone*">
+                    <input type="text" id="modal__email" placeholder="Email*">
+                    <button type='button' class="Submit">Submit</button>
+                    <div class="modal__checkbox">
+                        <input type="checkbox" id="modal__checkbox">
+                        <label for="modal__checkbox">By clicking the button you agree to the terms
+                            of processing your data</label></div>
+                    <!-- /.modal__checkbox -->
+                </form>
+                <!-- /.modal__form -->
+            </div>
+            <!-- /.modal__content--wrapp -->
+        </div>
+        <!-- /.modal__content -->
+    </div>
+    <!-- /.modal -->
+    <div class="thanks " id="modal_thanks">
+        <div class="thanks__content">
+            <div class="close_thanks_window">
+                <img src="./img/close.png" alt="close">
+            </div>
+            <div class="thanks__title">
+                <img src="./img/thank-you 1.png" alt="thanks-image">
+                <p>FOR YOUR QUOTE REQUEST</p>
+            </div>
+            <!-- /.thanks__title -->
+            <div class="thanks__subtitle">
+                <p>To provide you with the most accurate quote possible, we just need a little more information. One of our consultants will contact you to agree on your proposal within the next</p>
+            </div>
+            <!-- /.thanks__subtitle -->
+            <div class="thanks__time">
+                <span class="thanks__clock">00:30</span>
+                <span class="thanks__seconds">seconds</span>
+            </div>
+
+        </div>
+        <!-- /.thanks__content -->
+    </div>
+    <!-- /.thanks -->
+
+
 
     <!-- Скрипт owl.carousel для слайдера -->
     <script src="assets/js/slick.min.js"></script>
     <!-- Общие скрипты -->
     <script src="assets/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
 
 </body>
-
-
-
-
-
 
 </html>
